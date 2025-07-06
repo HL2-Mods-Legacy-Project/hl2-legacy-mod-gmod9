@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "GMOD_9.0.4" `
+  -ModName "Garry's Mod 9.0.4" `
+  -ModFolder "gmod9" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/gmod9/Gmod-9.0.4-Original.zip" `
+  -ModBaseFilesUrlHash "376fe0c4a5c84be8855aedcb65d427a6532beb8e82cbfde226f57a2d7d2f3eca" `
+  -ModReadmePath "readme.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
